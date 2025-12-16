@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="アグメントグループへのお問い合わせ。環境事業、飲食事業、採用に関するご質問・ご相談はこちらからお気軽にどうぞ。">
+    <meta name="keywords" content="アグメント, お問い合わせ, 相談, 見積り, 採用">
+    <title>お問い合わせ | アグメントグループ - AGUMENT GROUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header header-dark" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-main">AGUMENT</span>
+                <span class="logo-sub">GROUP</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#philosophy">理念</a></li>
+                    <li><a href="index.html#message">社長挨拶</a></li>
+                    <li><a href="index.html#group">グループ</a></li>
+                    <li><a href="index.html#activities">活動</a></li>
+                    <li><a href="index.html#sustainability">SDGs</a></li>
+                    <li><a href="index.html#news">ニュース</a></li>
+                    <li><a href="recruit.html" class="nav-recruit">採用情報</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html#philosophy">理念</a></li>
+                <li><a href="index.html#message">社長挨拶</a></li>
+                <li><a href="index.html#group">グループ</a></li>
+                <li><a href="index.html#activities">活動</a></li>
+                <li><a href="index.html#sustainability">SDGs</a></li>
+                <li><a href="index.html#news">ニュース</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ページヘッダー -->
+    <section class="page-header">
+        <div class="container">
+            <span class="page-label">Contact</span>
+            <h1 class="page-title">お問い合わせ</h1>
+        </div>
+    </section>
+
+    <!-- お問い合わせ内容 -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-intro">
+                <p>
+                    アグメントグループへのお問い合わせは、下記フォームまたはお電話にて承っております。<br>
+                    環境事業、飲食事業、採用に関するご質問・ご相談など、お気軽にお問い合わせください。
+                </p>
+            </div>
+
+            <div class="contact-main">
+                <!-- 連絡先情報 -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>お電話でのお問い合わせ</h3>
+                        <a href="tel:0120-48-3594" class="phone-number">0120-48-3594</a>
+                        <p class="phone-note">フリーダイヤル（月〜土 9:00〜17:00）</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3>メールでのお問い合わせ</h3>
+                        <a href="mailto:info@agument.co.jp" class="email-address">info@agument.co.jp</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>本社所在地</h3>
+                        <address>
+                            〒470-2201<br>
+                            愛知県知多郡阿久比町<br>
+                            大字白沢字清水田6-1
+                        </address>
+                    </div>
+
+                    <div class="group-contacts">
+                        <h4>グループ各社へのお問い合わせ</h4>
+                        <div class="group-contact-item">
+                            <span class="contact-company">株式会社アグメント（環境事業）</span>
+                            <span class="contact-tel">0120-48-3594</span>
+                        </div>
+                        <div class="group-contact-item">
+                            <span class="contact-company">HANROK（飲食事業）</span>
+                            <a href="https://hanrok.jp/contact/" target="_blank" class="contact-link">HANROKサイトへ →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- お問い合わせフォーム -->
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="inquiry-type">お問い合わせ種別 <span class="required">必須</span></label>
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="">選択してください</option>
+                                <option value="環境事業について">環境事業について</option>
+                                <option value="浄化槽・水処理について">浄化槽・水処理について</option>
+                                <option value="廃棄物処理について">廃棄物処理について</option>
+                                <option value="食品リサイクルについて">食品リサイクルについて</option>
+                                <option value="採用について">採用について</option>
+                                <option value="取材・メディア関連">取材・メディア関連</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">必須</span></label>
+                                <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">会社名・団体名</label>
+                                <input type="text" id="company" name="company" placeholder="例：株式会社〇〇">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">メールアドレス <span class="required">必須</span></label>
+                                <input type="email" id="email" name="email" placeholder="例：info@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">電話番号</label>
+                                <input type="tel" id="phone" name="phone" placeholder="例：0569-XX-XXXX">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="お問い合わせ内容をご記入ください"
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">
+                                <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意する <span
+                                    class="required">必須</span>
+                            </label>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-large">送信する</button>
+                        </div>
+
+                        <p class="form-note">
+                            ※ 通常2〜3営業日以内にご返信いたします。<br>
+                            ※ お急ぎの場合はお電話にてお問い合わせください。
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- アクセス -->
+    <section class="access-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Access</span>
+                <h2 class="section-title">アクセス</h2>
+            </div>
+            <div class="access-content">
+                <div class="access-map">
+                    <div class="map-embed">
+                        <!-- Google Maps Embed would go here -->
+                        <div class="map-placeholder">
+                            <span>Googleマップ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="access-info">
+                    <h3>株式会社アグメント 本社</h3>
+                    <address>
+                        〒470-2201<br>
+                        愛知県知多郡阿久比町大字白沢字清水田6-1
+                    </address>
+                    <dl class="access-details">
+                        <dt>電車でお越しの場合</dt>
+                        <dd>名鉄河和線「阿久比駅」より車で約10分</dd>
+                        <dt>お車でお越しの場合</dt>
+                        <dd>知多半島道路「阿久比IC」より約5分<br>駐車場完備</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-main">AGUMENT</span>
+                        <span class="logo-sub">GROUP</span>
+                    </a>
+                    <p class="footer-tagline">人と環境を美しく。知多半島から、未来へ。</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4>グループについて</h4>
+                        <ul>
+                            <li><a href="index.html#philosophy">理念</a></li>
+                            <li><a href="index.html#message">社長挨拶</a></li>
+                            <li><a href="index.html#group">グループ企業</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>事業内容</h4>
+                        <ul>
+                            <li><a href="agument.html">環境事業</a></li>
+                            <li><a href="https://hanrok.jp/" target="_blank">飲食事業（HANROK）</a></li>
+                            <li><a href="index.html#activities">活動報告</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>情報</h4>
+                        <ul>
+                            <li><a href="index.html#news">ニュース</a></li>
+                            <li><a href="index.html#sustainability">SDGs</a></li>
+                            <li><a href="recruit.html">採用情報</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>お問い合わせ</h4>
+                        <ul>
+                            <li><a href="contact.html">お問い合わせ</a></li>
+                            <li><a href="tel:0120-48-3594">0120-48-3594</a></li>
+                            <li><a href="mailto:info@agument.co.jp">info@agument.co.jp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-group-companies">
+                    <span>グループ企業：</span>
+                    <a href="agument.html">株式会社アグメント</a>
+                    <span>|</span>
+                    <a href="https://hanrok.jp/" target="_blank">株式会社chita（HANROK）</a>
+                </div>
+                <p class="copyright">&copy; 2024 AGUMENT GROUP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Simple form handling
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // In production, this would send to a backend
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            console.log('Form submitted:', data);
+
+            // Show success message
+            alert('お問い合わせを受け付けました。\n担当者より折り返しご連絡いたします。');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

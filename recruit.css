@@ -1,0 +1,733 @@
+/* ===================================
+   Recruit Page Styles
+   =================================== */
+
+/* Header Dark Mode */
+.header-dark .logo .logo-main,
+.header-dark .nav-list a {
+    color: var(--color-gray-800);
+}
+
+.header-dark .hamburger span {
+    background: var(--color-gray-800);
+}
+
+.header-dark.scrolled .logo .logo-main {
+    color: var(--color-primary-dark);
+}
+
+/* Recruit Hero */
+.recruit-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--header-height) + var(--space-4xl)) var(--space-xl) var(--space-4xl);
+}
+
+.recruit-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.recruit-hero-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-secondary-dark) 0%, var(--color-secondary) 50%, var(--color-secondary-light) 100%);
+}
+
+.recruit-hero-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.recruit-hero-label {
+    display: inline-block;
+    font-family: var(--font-accent);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-md);
+    animation: fadeInUp 0.8s ease both;
+}
+
+.recruit-hero-title {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 1.4;
+    margin-bottom: var(--space-xl);
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.recruit-hero-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 2;
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+/* Recruit Appeal Section */
+.recruit-appeal {
+    padding: var(--space-5xl) 0;
+    background: var(--color-light);
+}
+
+.appeal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+}
+
+.appeal-card {
+    background: var(--color-white);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.appeal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.appeal-number {
+    font-family: var(--font-accent);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    opacity: 0.3;
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-xl);
+}
+
+.appeal-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.appeal-card p {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    line-height: 1.8;
+}
+
+
+/* Hero Typography Updates */
+.hero-label-gold {
+    display: block;
+    font-family: var(--font-accent);
+    color: var(--color-secondary);
+    /* Gold */
+    font-size: 1rem;
+    letter-spacing: 0.25em;
+    margin-bottom: var(--space-md);
+    font-weight: 500;
+}
+
+.hero-title-large {
+    font-family: var(--font-accent);
+    /* Playfair Display */
+    font-size: clamp(3.5rem, 8vw, 6rem);
+    color: var(--color-white);
+    line-height: 1;
+    margin-bottom: var(--space-lg);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle-ja {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-description-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 2;
+    max-width: 600px;
+    /* Limit width */
+    margin: 0 auto;
+    /* Center */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Departments Section */
+.departments {
+    padding: var(--space-5xl) 0;
+    background: var(--color-white);
+}
+
+.department-section {
+    margin-bottom: var(--space-4xl);
+    padding-bottom: var(--space-3xl);
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.department-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.department-header {
+    margin-bottom: var(--space-2xl);
+}
+
+.department-company {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-white);
+    background: var(--color-primary);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-sm);
+}
+
+.department-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.department-description {
+    font-size: 0.9rem;
+    color: var(--color-gray-600);
+    max-width: 700px;
+}
+
+.department-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .department-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Employee Card */
+.employee-card {
+    background: var(--color-light);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.employee-image {
+    height: 220px;
+    background: linear-gradient(135deg, var(--color-gray-300), var(--color-gray-400));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.employee-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform var(--transition-slow);
+}
+
+.employee-card:hover .employee-image img {
+    transform: scale(1.05);
+}
+
+.image-placeholder {
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+}
+
+.employee-info {
+    padding: var(--space-xl);
+}
+
+.employee-info h4 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-sm);
+}
+
+.employee-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.employee-quote {
+    font-size: 0.875rem;
+    color: var(--color-gray-700);
+    line-height: 1.9;
+    font-style: normal;
+    position: relative;
+    padding-left: var(--space-md);
+    border-left: 3px solid var(--color-secondary);
+}
+
+/* Job Requirements */
+.job-requirements {
+    background: var(--color-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+}
+
+.job-requirements h4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+}
+
+.requirements-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.requirements-table tr {
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.requirements-table tr:last-child {
+    border-bottom: none;
+}
+
+.requirements-table th,
+.requirements-table td {
+    padding: var(--space-md) var(--space-sm);
+    text-align: left;
+    vertical-align: top;
+    font-size: 0.875rem;
+}
+
+.requirements-table th {
+    width: 100px;
+    font-weight: 500;
+    color: var(--color-gray-600);
+    white-space: nowrap;
+}
+
+.requirements-table td {
+    color: var(--color-gray-800);
+}
+
+/* Recruit Flow */
+.recruit-flow {
+    padding: var(--space-5xl) 0;
+    background: var(--color-light);
+}
+
+.flow-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+    .flow-steps {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.flow-step {
+    background: var(--color-white);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+    box-shadow: var(--shadow-sm);
+}
+
+.flow-number {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-accent);
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.flow-step h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-sm);
+}
+
+.flow-step p {
+    font-size: 0.8rem;
+    color: var(--color-gray-600);
+}
+
+.flow-line {
+    width: 2px;
+    height: 30px;
+    background: var(--color-gray-300);
+}
+
+@media (min-width: 768px) {
+    .flow-line {
+        width: 40px;
+        height: 2px;
+        margin-top: 40px;
+    }
+}
+
+/* Recruit CTA Section */
+.recruit-cta-section {
+    padding: var(--space-5xl) 0;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+}
+
+.cta-content {
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.cta-content p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: var(--space-2xl);
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.btn-secondary-dark {
+    background: transparent;
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.btn-secondary-dark:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .recruit-hero-description br {
+        display: none;
+    }
+
+    .cta-content p br {
+        display: none;
+    }
+}
+
+/* ===================================
+   Employee Pop-out Visuals
+   =================================== */
+.employee-card {
+    /* Reset background since we are doing custom visual */
+    background: transparent;
+    padding: 0;
+    overflow: visible;
+    /* Allow pop-out */
+    box-shadow: none;
+    margin-top: var(--space-2xl);
+    /* Space for top pop-out */
+}
+
+.visual-wrapper {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    /* Fixed height for consistency */
+    margin-bottom: -40px;
+    /* Pull text up */
+}
+
+.visual-bg-img {
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    filter: brightness(0.95);
+}
+
+.visual-person-img {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    /* Slightly off-center */
+    transform: translateX(-50%);
+    height: 110%;
+    /* Pop out top */
+    width: auto;
+    max-width: 140%;
+    z-index: 2;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+}
+
+.recruit-info-overlay {
+    position: relative;
+    background: var(--color-white);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    width: 90%;
+    margin-left: auto;
+    /* Box to the right */
+    z-index: 3;
+}
+
+.recruit-info-overlay h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+}
+
+.recruit-info-overlay h4::before {
+    content: 'VOICE / ';
+    opacity: 0.7;
+}
+
+.recruit-info-overlay .employee-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+}
+
+.recruit-info-overlay .employee-quote {
+    border-left: none;
+    /* Remove old style */
+    padding-left: 0;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-gray-700);
+}
+
+@media (max-width: 640px) {
+    .visual-wrapper {
+        height: 300px;
+    }
+
+    .recruit-info-overlay {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* ===================================
+   Recruit Hero Premium
+   =================================== */
+.recruit-hero-premium {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.recruit-hero-premium .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.recruit-hero-premium .hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recruit-hero-premium .hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 95, 78, 0.4) 0%, rgba(26, 95, 78, 0.2) 50%, rgba(223, 206, 157, 0.2) 100%);
+}
+
+.recruit-hero-premium .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 60px;
+    /* Offset for header */
+}
+
+/* Wave Animation */
+.recruit-hero-premium .hero-wave-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+.recruit-hero-premium .wave-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.recruit-hero-premium .wave-path {
+    stroke-dasharray: 800 2400;
+    stroke-dashoffset: 2400;
+    animation: flowRecruit 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    opacity: 0.8;
+}
+
+@keyframes flowRecruit {
+    0% {
+        stroke-dashoffset: 3200;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        stroke-dashoffset: -800;
+        opacity: 0;
+    }
+}
+
+/* ===================================
+   Recruit Appeal Premium
+   =================================== */
+.recruit-appeal-premium {
+    padding: var(--space-6xl) 0;
+    background: var(--color-light);
+    position: relative;
+}
+
+.appeal-premium-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+    margin-top: var(--space-4xl);
+}
+
+@media (max-width: 900px) {
+    .appeal-premium-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.appeal-premium-card {
+    background: var(--color-white);
+    padding: var(--space-4xl) var(--space-3xl);
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.appeal-premium-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.appeal-card-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, var(--color-secondary-light) 0%, transparent 70%);
+    opacity: 0.1;
+    border-radius: 0 0 0 100%;
+    pointer-events: none;
+}
+
+.appeal-premium-card .appeal-number {
+    font-family: var(--font-accent);
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+    line-height: 1;
+    margin-bottom: var(--space-lg);
+    opacity: 0.8;
+}
+
+.appeal-premium-card h3 {
+    font-family: var(--font-base);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-md);
+    line-height: 1.4;
+}
+
+.appeal-premium-card p {
+    font-size: 0.95rem;
+    color: var(--color-gray-600);
+    line-height: 1.8;
+}

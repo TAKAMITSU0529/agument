@@ -1,0 +1,270 @@
+/* ===================================
+   Activities Page Styles
+   =================================== */
+
+/* Page Header with Background */
+.page-header-green {
+    position: relative;
+    padding: calc(var(--header-height) + var(--space-4xl)) var(--space-xl) var(--space-3xl);
+    text-align: center;
+    color: var(--color-white);
+}
+
+.page-header-green .page-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    z-index: -1;
+}
+
+.page-header-green .page-label {
+    color: var(--color-secondary);
+}
+
+.page-header-green .page-title {
+    color: var(--color-white);
+}
+
+.page-header-green .page-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: var(--space-md);
+}
+
+/* Activities Page */
+.activities-page {
+    padding: var(--space-4xl) 0;
+}
+
+/* Activity Tabs */
+.activity-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-3xl);
+}
+
+.activity-tab {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-gray-600);
+    padding: var(--space-sm) var(--space-lg);
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+}
+
+.activity-tab:hover,
+.activity-tab.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+/* Activities Grid */
+.activities-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+/* Activity Full Card */
+.activity-full-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    padding: var(--space-xl);
+    background: var(--color-light);
+    border-radius: var(--radius-lg);
+    transition: box-shadow var(--transition-normal);
+}
+
+.activity-full-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+    .activity-full-card {
+        grid-template-columns: 300px 1fr;
+    }
+}
+
+.activity-full-image {
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-gray-300), var(--color-gray-400));
+}
+
+.activity-full-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform var(--transition-slow);
+}
+
+.activity-full-card:hover .activity-full-image img {
+    transform: scale(1.05);
+}
+
+.activity-full-image .image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-500);
+    font-size: 0.875rem;
+}
+
+.activity-full-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.activity-category-tag {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    color: var(--color-white);
+}
+
+.activity-category-tag.social {
+    background: var(--color-primary);
+}
+
+.activity-category-tag.community {
+    background: var(--color-secondary);
+}
+
+.activity-category-tag.culture {
+    background: #8b4513;
+}
+
+.activity-category-tag.environment {
+    background: #228b22;
+}
+
+.activity-date {
+    font-family: var(--font-accent);
+    font-size: 0.8rem;
+    color: var(--color-gray-500);
+}
+
+.activity-full-content h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.activity-full-content h2 a {
+    transition: color var(--transition-fast);
+}
+
+.activity-full-content h2 a:hover {
+    color: var(--color-primary);
+}
+
+.activity-full-content p {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    line-height: 1.9;
+    flex: 1;
+    margin-bottom: var(--space-md);
+}
+
+.activity-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    transition: color var(--transition-fast);
+}
+
+.activity-link:hover {
+    color: var(--color-primary-dark);
+}
+
+/* Pagination (shared) */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-3xl);
+}
+
+.pagination-current,
+.pagination-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 0.875rem;
+    border-radius: var(--radius-sm);
+}
+
+.pagination-current {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.pagination-link {
+    color: var(--color-gray-600);
+    border: 1px solid var(--color-gray-300);
+    transition: all var(--transition-fast);
+}
+
+.pagination-link:hover {
+    background: var(--color-light);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.pagination-next {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    padding: var(--space-sm) var(--space-md);
+    margin-left: var(--space-md);
+    transition: color var(--transition-fast);
+}
+
+.pagination-next:hover {
+    color: var(--color-primary);
+}
+
+/* Header Dark Mode (shared) */
+.header-dark .logo .logo-main,
+.header-dark .nav-list a {
+    color: var(--color-gray-800);
+}
+
+.header-dark .hamburger span {
+    background: var(--color-gray-800);
+}
+
+.header-dark.scrolled .logo .logo-main {
+    color: var(--color-primary-dark);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .page-header-green .page-description br {
+        display: none;
+    }
+}

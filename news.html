@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="アグメントグループの最新ニュース・お知らせ。環境事業、飲食事業、採用情報などの最新情報をお届けします。">
+    <meta name="keywords" content="アグメント, ニュース, お知らせ, イベント">
+    <title>ニュース | アグメントグループ - AGUMENT GROUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="news.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header header-dark" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-main">AGUMENT</span>
+                <span class="logo-sub">GROUP</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#philosophy">理念</a></li>
+                    <li><a href="index.html#message">社長挨拶</a></li>
+                    <li><a href="index.html#group">グループ</a></li>
+                    <li><a href="index.html#activities">活動</a></li>
+                    <li><a href="index.html#sustainability">SDGs</a></li>
+                    <li><a href="index.html#news">ニュース</a></li>
+                    <li><a href="recruit.html" class="nav-recruit">採用情報</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html#philosophy">理念</a></li>
+                <li><a href="index.html#message">社長挨拶</a></li>
+                <li><a href="index.html#group">グループ</a></li>
+                <li><a href="index.html#activities">活動</a></li>
+                <li><a href="index.html#sustainability">SDGs</a></li>
+                <li><a href="index.html#news">ニュース</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ページヘッダー -->
+    <section class="page-header">
+        <div class="container">
+            <span class="page-label">News</span>
+            <h1 class="page-title">ニュース</h1>
+        </div>
+    </section>
+
+    <!-- ニュース一覧 -->
+    <section class="news-page">
+        <div class="container">
+            <!-- カテゴリフィルター -->
+            <div class="news-filters">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="info">お知らせ</button>
+                <button class="filter-btn" data-filter="event">イベント</button>
+                <button class="filter-btn" data-filter="recruit">採用</button>
+                <button class="filter-btn" data-filter="media">メディア</button>
+            </div>
+
+            <!-- ニュース一覧 -->
+            <div class="news-archive" id="newsArchive">
+                <article class="news-archive-item" data-category="info">
+                    <time class="news-date">2024.12.15</time>
+                    <span class="news-category news-category-info">お知らせ</span>
+                    <div class="news-content">
+                        <h3><a href="#">年末年始の営業についてのご案内</a></h3>
+                        <p>2024年12月29日（日）〜2025年1月5日（日）まで休業とさせていただきます。新年は1月6日（月）より通常営業いたします。</p>
+                    </div>
+                </article>
+
+                <article class="news-archive-item" data-category="event">
+                    <time class="news-date">2024.12.01</time>
+                    <span class="news-category news-category-event">イベント</span>
+                    <div class="news-content">
+                        <h3><a href="#">HANROKクリスマスディナーのご予約受付開始</a></h3>
+                        <p>12月23日〜25日限定のクリスマス特別ディナーコースのご予約を開始しました。知多半島の冬の味覚を贅沢に使用した特別メニューをお楽しみください。</p>
+                    </div>
+                </article>
+
+                <article class="news-archive-item" data-category="recruit">
+                    <time class="news-date">2024.11.20</time>
+                    <span class="news-category news-category-recruit">採用</span>
+                    <div class="news-content">
+                        <h3><a href="recruit.html">2025年度新卒採用エントリー受付中</a></h3>
+                        <p>環境事業・飲食事業で活躍する新卒社員を募集しています。会社説明会も随時開催中。詳しくは採用ページをご覧ください。</p>
+                    </div>
+                </article>
+
+                <article class="news-archive-item" data-category="info">
+                    <time class="news-date">2024.11.10</time>
+                    <span class="news-category news-category-info">お知らせ</span>
+                    <div class="news-content">
+                        <h3><a href="#">環境省「エコ・ファースト企業」に認定されました</a></h3>
+                        <p>当社の環境への取り組みが評価され、環境省の「エコ・ファースト制度」に認定されました。今後も持続可能な社会の実現に向けて取り組んでまいります。</p>
+                    </div>
+                </article>
+
+                <article class="news-archive-item" data-category="media">
+                    <time class="news-date">2024.10.25</time>
+                    <span class="news-category news-category-media">メディア</span>
+                    <div class="news-content">
+                        <h3><a href="#">中日新聞に知多美人そばプロジェクトが掲載されました</a></h3>
+                        <p>食品リサイクル堆肥を活用した「知多美人そば」プロジェクトが中日新聞に取り上げられました。地域資源の循環と食文化の発信についてご紹介いただきました。</p>
+                    </div>
+                </article>
+
+                <article class="news-archive-item" data-category="event">
+                    <time class="news-date">2024.10.15</time>
+                    <span class="news-category news-category-event">イベント</span>
+                    <div class="news-content">
+                        <h3><a href="#">知多半島マルシェに出店しました</a></h3>
+                        <p>10月14日〜15日に開催された「知多半島マルシェ」に出店しました。多くの方にご来場いただき、ありがとうございました。</p>
+                    </div>
+                </article>
+
+                <article class="news-archive-item" data-category="info">
+                    <time class="news-date">2024.09.30</time>
+                    <span class="news-category news-category-info">お知らせ</span>
+                    <div class="news-content">
+                        <h3><a href="#">ウェブサイトをリニューアルしました</a></h3>
+                        <p>アグメントグループのウェブサイトを全面リニューアルしました。より見やすく、情報を分かりやすくお届けできるようになりました。</p>
+                    </div>
+                </article>
+
+                <article class="news-archive-item" data-category="recruit">
+                    <time class="news-date">2024.09.15</time>
+                    <span class="news-category news-category-recruit">採用</span>
+                    <div class="news-content">
+                        <h3><a href="recruit.html">HANROK　キッチンスタッフ急募</a></h3>
+                        <p>フレンチレストランHANROKでキッチンスタッフを急募しています。経験者優遇。詳細は採用ページをご確認ください。</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ページネーション -->
+            <nav class="pagination">
+                <span class="pagination-current">1</span>
+                <a href="#" class="pagination-link">2</a>
+                <a href="#" class="pagination-link">3</a>
+                <a href="#" class="pagination-next">次へ →</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-main">AGUMENT</span>
+                        <span class="logo-sub">GROUP</span>
+                    </a>
+                    <p class="footer-tagline">人と環境を美しく。知多半島から、未来へ。</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4>グループについて</h4>
+                        <ul>
+                            <li><a href="index.html#philosophy">理念</a></li>
+                            <li><a href="index.html#message">社長挨拶</a></li>
+                            <li><a href="index.html#group">グループ企業</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>事業内容</h4>
+                        <ul>
+                            <li><a href="agument.html">環境事業</a></li>
+                            <li><a href="https://hanrok.jp/" target="_blank">飲食事業（HANROK）</a></li>
+                            <li><a href="index.html#activities">活動報告</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>情報</h4>
+                        <ul>
+                            <li><a href="index.html#news">ニュース</a></li>
+                            <li><a href="index.html#sustainability">SDGs</a></li>
+                            <li><a href="recruit.html">採用情報</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>お問い合わせ</h4>
+                        <ul>
+                            <li><a href="contact.html">お問い合わせ</a></li>
+                            <li><a href="tel:0120-48-3594">0120-48-3594</a></li>
+                            <li><a href="mailto:info@agument.co.jp">info@agument.co.jp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-group-companies">
+                    <span>グループ企業：</span>
+                    <a href="agument.html">株式会社アグメント</a>
+                    <span>|</span>
+                    <a href="https://hanrok.jp/" target="_blank">株式会社chita（HANROK）</a>
+                </div>
+                <p class="copyright">&copy; 2024 AGUMENT GROUP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // News Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter news items
+                document.querySelectorAll('.news-archive-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="アグメントグループは、環境事業と飲食事業を通じて、知多半島の持続可能な未来を創造します。地域に根ざし、人と環境が調和する社会の実現を目指しています。">
+    <meta name="keywords" content="アグメント, AGUMENT, HANROK, 知多半島, 環境事業, 飲食事業, SDGs, 採用">
+    <title>アグメントグループ | AGUMENT GROUP - 知多半島から、未来へ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ローダー -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-text">AGUMENT</span>
+                <span class="logo-group">GROUP</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-main">AGUMENT</span>
+                <span class="logo-sub">GROUP</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#philosophy">Philosophy<span
+                                style="font-size:0.7em; display:block; opacity:0.7; font-weight:400;">理念</span></a></li>
+                    <li><a href="#group">Group<span
+                                style="font-size:0.7em; display:block; opacity:0.7; font-weight:400;">グループ</span></a>
+                    </li>
+                    <li><a href="#activities">Activities<span
+                                style="font-size:0.7em; display:block; opacity:0.7; font-weight:400;">活動</span></a></li>
+                    <li><a href="#news">News<span
+                                style="font-size:0.7em; display:block; opacity:0.7; font-weight:400;">ニュース</span></a>
+                    </li>
+                    <li><a href="recruit.html" class="nav-recruit">Recruit<span
+                                style="font-size:0.7em; display:block; opacity:0.7; font-weight:400;">採用</span></a></li>
+                </ul>
+            </nav>
+            <div class="header-actions-wrapper">
+                <a href="contact.html" class="btn-contact-header">
+                    CONTACT →
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#philosophy">PHILOSOPHY</a></li>
+                <li><a href="#group">GROUP</a></li>
+                <li><a href="#activities">ACTIVITIES</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ヒーローセクション -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero_landscape.png" alt="知多半島の美しい景観" class="hero-bg-image">
+            <div class="hero-gradient"></div>
+
+            <!-- Wave Animation -->
+            <div class="hero-wave-line">
+                <svg class="wave-svg" viewBox="0 0 1440 600" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#c4a35a; stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#dfce9d; stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1a5f4e; stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="5" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    <path class="wave-path" d="M-100,450 C300,550 500,150 900,350 C1300,550 1500,250 1600,350"
+                        fill="none" stroke="url(#waveGradient)" stroke-width="8" stroke-linecap="round"
+                        filter="url(#glow)" />
+                </svg>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <div class="title-line">CREATE</div>
+                <div class="title-line">THE FUTURE</div>
+                <div class="title-line">FROM CHITA.</div>
+            </h1>
+            <p class="hero-description">
+                知多半島から、未来へ。
+            </p>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 理念セクション -->
+    <section class="philosophy" id="philosophy">
+        <div class="philosophy-bg-shape"></div>
+        <div class="container relative-z">
+            <div class="section-title-wrapper">
+                <div class="section-leaf-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+                    </svg>
+                </div>
+                <h2 class="section-title-large">Philosophy</h2>
+                <span class="section-subtitle-large">企業理念</span>
+            </div>
+
+            <div class="philosophy-intro-text">
+                <h3>人と環境を美しく。<br>知多半島の未来を紡ぐ。</h3>
+                <p>
+                    私たちアグメントグループは、「人と環境を美しく」という理念のもと、<br>
+                    環境事業と飲食事業という二つの柱を通じて、知多半島の持続可能な発展に貢献しています。<br>
+                    地域の環境を守り、その恵みを最大限に活かすことで、次世代へと受け継がれる豊かな社会を創造します。
+                </p>
+            </div>
+
+            <div class="philosophy-cards-grid">
+                <!-- Card 1: Bond -->
+                <div class="philosophy-card-item">
+                    <div class="card-image-wrapper">
+                        <img src="images/activity_marche.png" alt="絆" class="card-bg-img">
+                        <div class="card-overlay">
+                            <h4 class="card-title-en">Bond</h4>
+                            <div class="card-arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text-content">
+                        <h5 class="card-title-ja">絆</h5>
+                        <p class="card-desc">地域との深いつながり</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Praise -->
+                <div class="philosophy-card-item">
+                    <div class="card-image-wrapper">
+                        <img src="images/activity_harvest.png" alt="称賛" class="card-bg-img">
+                        <div class="card-overlay">
+                            <h4 class="card-title-en">Praise</h4>
+                            <div class="card-arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text-content">
+                        <h5 class="card-title-ja">称賛</h5>
+                        <p class="card-desc">自然への感謝と敬意</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Innovation -->
+                <div class="philosophy-card-item">
+                    <div class="card-image-wrapper">
+                        <img src="images/recycling_facility.png" alt="革新" class="card-bg-img">
+                        <div class="card-overlay">
+                            <h4 class="card-title-en">Innovation</h4>
+                            <div class="card-arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text-content">
+                        <h5 class="card-title-ja">革新</h5>
+                        <p class="card-desc">新しい価値の追求</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Tradition -->
+                <div class="philosophy-card-item">
+                    <div class="card-image-wrapper">
+                        <img src="images/hanrok_restaurant.png" alt="伝承" class="card-bg-img">
+                        <div class="card-overlay">
+                            <h4 class="card-title-en">Tradition</h4>
+                            <div class="card-arrow">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text-content">
+                        <h5 class="card-title-ja">伝承</h5>
+                        <p class="card-desc">伝統と文化の継承</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社長挨拶セクション -->
+    <section class="message" id="message">
+        <div class="container">
+            <div class="message-content">
+                <div class="message-image">
+                    <div class="image-frame">
+                        <img src="images/ceo_message.jpg" alt="代表取締役社長" class="ceo-photo">
+                    </div>
+                </div>
+                <div class="message-text">
+                    <div class="section-title-wrapper">
+                        <div class="section-leaf-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+                            </svg>
+                        </div>
+                        <h2 class="section-title-large">Message</h2>
+                        <span class="section-subtitle-large">社長挨拶</span>
+                    </div>
+                    <h3 class="message-headline">
+                        地域と共に歩み、<br>
+                        未来を創造する
+                    </h3>
+                    <div class="message-body">
+                        <p>
+                            この知多半島という土地で事業を営む私たちには、
+                            地域の環境を守り、その恵みを最大限に活かす使命があります。
+                        </p>
+                        <p>
+                            環境事業では、地域のインフラを支え、資源の循環を促進することで、
+                            持続可能な社会基盤の構築に貢献しています。
+                            飲食事業では、地元の新鮮な食材を活かし、
+                            知多半島の魅力を料理を通じて発信しています。
+                        </p>
+                        <p>
+                            これら二つの事業は、「地域資源の循環」という共通のテーマで結ばれています。
+                            私たちの食品リサイクル堆肥で育てた「知多美人そば」を、
+                            レストランで提供する——このような循環型の取り組みが、
+                            アグメントグループの強みです。
+                        </p>
+                        <p>
+                            社員一人ひとりが、この理念を胸に、
+                            日々の業務に取り組んでいます。
+                            共に、知多半島の未来を創りましょう。
+                        </p>
+                    </div>
+                    <div class="message-signature">
+                        <span class="signature-title">代表取締役社長</span>
+                        <span class="signature-name">アグメントグループ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- グループ紹介セクション -->
+    <section class="group" id="group">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <div class="section-leaf-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+                    </svg>
+                </div>
+                <h2 class="section-title-large">Group</h2>
+                <span class="section-subtitle-large">グループ企業</span>
+            </div>
+            <p class="section-description">
+                アグメントグループは、環境事業と飲食事業を柱に、
+                知多半島の持続可能な発展に貢献しています。
+            </p>
+            <div class="group-companies">
+                <!-- アグメント -->
+                <div class="company-card">
+                    <div class="company-visual">
+                        <img src="images/agument_building.png" alt="株式会社アグメント" class="company-bg-image">
+                        <div class="company-overlay"></div>
+                        <div class="company-badge">環境事業</div>
+                    </div>
+                    <div class="company-content">
+                        <div class="company-logo-wrap">
+                            <span class="company-logo-text">AGUMENT</span>
+                        </div>
+                        <h3>株式会社 アグメント</h3>
+                        <p class="company-description">
+                            浄化槽メンテナンス、廃棄物処理、資源循環事業を通じて、
+                            地域の環境インフラを支えています。
+                            食品リサイクル「アグエコ」では、
+                            廃棄食品を堆肥に変え、農業に活用。
+                            環境と経済の好循環を生み出しています。
+                        </p>
+                        <ul class="company-services">
+                            <li>メンテナンス事業</li>
+                            <li>環境関連事業</li>
+                            <li>資源循環推進事業</li>
+                        </ul>
+                        <a href="agument.html" class="btn btn-outline">詳しく見る</a>
+                    </div>
+                </div>
+                <!-- HANROK -->
+                <div class="company-card">
+                    <div class="company-visual">
+                        <img src="images/hanrok_restaurant.png" alt="HANROK レストラン" class="company-bg-image">
+                        <div class="company-overlay"></div>
+                        <div class="company-badge">飲食事業</div>
+                    </div>
+                    <div class="company-content">
+                        <div class="company-logo-wrap">
+                            <span class="company-logo-text">HANROK</span>
+                        </div>
+                        <h3>株式会社 chita（HANROK）</h3>
+                        <p class="company-description">
+                            明治22年建築の歴史ある中埜半六家旧邸宅を舞台に、
+                            知多半島の食材を活かした創作フレンチを提供。
+                            知多美人そばをはじめ、知多牛「響」、
+                            知多ルビーポークなど、地元の恵みを堪能いただけます。
+                        </p>
+                        <ul class="company-services">
+                            <li>フレンチレストラン HANROK</li>
+                            <li>ウェディング事業</li>
+                            <li>知多美人そばプロジェクト</li>
+                        </ul>
+                        <a href="https://hanrok.jp/" target="_blank" rel="noopener" class="btn btn-outline">公式サイトへ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 循環モデルセクション -->
+    <section class="circulation">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <div class="section-leaf-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+                    </svg>
+                </div>
+                <h2 class="section-title-large">Circulation</h2>
+                <span class="section-subtitle-large">資源循環モデル</span>
+            </div>
+            <p class="section-description">
+                アグメントグループ独自の資源循環システムが、
+                環境事業と飲食事業を有機的につなげています。
+            </p>
+            <div class="circulation-diagram">
+                <div class="circulation-item">
+                    <div class="circulation-number">01</div>
+                    <div class="circulation-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                        </svg>
+                    </div>
+                    <h4>食品残渣の回収</h4>
+                    <p>レストランや地域から発生する食品残渣を回収</p>
+                </div>
+                <div class="circulation-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="circulation-item">
+                    <div class="circulation-number">02</div>
+                    <div class="circulation-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h4>堆肥への再生</h4>
+                    <p>アグエコで高品質な有機堆肥へリサイクル</p>
+                </div>
+                <div class="circulation-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="circulation-item">
+                    <div class="circulation-number">03</div>
+                    <div class="circulation-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2a10 10 0 110 20 10 10 0 010-20z" />
+                            <path d="M12 6a6 6 0 110 12 6 6 0 010-12z" />
+                            <path d="M12 10a2 2 0 110 4 2 2 0 010-4z" />
+                        </svg>
+                    </div>
+                    <h4>知多美人そばの栽培</h4>
+                    <p>堆肥を活用し休耕地でそばを栽培</p>
+                </div>
+                <div class="circulation-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="circulation-item">
+                    <div class="circulation-number">04</div>
+                    <div class="circulation-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
+                            <path d="M6 1v3M10 1v3M14 1v3" />
+                        </svg>
+                    </div>
+                    <h4>レストランで提供</h4>
+                    <p>HANROKで「知多美人そば」として提供</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活動報告セクション -->
+    <section class="activities" id="activities">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <div class="section-leaf-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+                    </svg>
+                </div>
+                <h2 class="section-title-large">Activities</h2>
+                <span class="section-subtitle-large">活動報告</span>
+            </div>
+            <div class="activities-tabs">
+                <button class="tab-btn active" data-tab="social">社会とのつながり</button>
+                <button class="tab-btn" data-tab="community">地域貢献</button>
+                <button class="tab-btn" data-tab="culture">食文化の発信</button>
+            </div>
+            <div class="activities-content">
+                <div class="tab-panel active" id="social">
+                    <div class="activity-grid">
+                        <article class="activity-card">
+                            <div class="activity-image">
+                                <img src="images/activity_cleaning.png" alt="地域清掃ボランティア">
+                            </div>
+                            <div class="activity-body">
+                                <span class="activity-date">2024.12.10</span>
+                                <h4>地域清掃ボランティアを実施</h4>
+                                <p>阿久比町内の清掃活動に社員が参加。地域の美化に貢献しました。</p>
+                            </div>
+                        </article>
+                        <article class="activity-card">
+                            <div class="activity-image">
+                                <img src="images/activity_school.png" alt="環境授業">
+                            </div>
+                            <div class="activity-body">
+                                <span class="activity-date">2024.11.25</span>
+                                <h4>小学校での環境授業を開催</h4>
+                                <p>地元小学校で環境リサイクルについての出張授業を行いました。</p>
+                            </div>
+                        </article>
+                        <article class="activity-card">
+                            <div class="activity-image">
+                                <img src="images/activity_marche.png" alt="知多半島マルシェ">
+                            </div>
+                            <div class="activity-body">
+                                <span class="activity-date">2024.10.15</span>
+                                <h4>知多半島マルシェに出店</h4>
+                                <p>地域の食と環境をテーマにしたマルシェに参加しました。</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tab-panel" id="community">
+                    <div class="activity-grid">
+                        <article class="activity-card">
+                            <div class="activity-image">
+                                <img src="images/recycling_facility.png" alt="防災訓練">
+                            </div>
+                            <div class="activity-body">
+                                <span class="activity-date">2024.11.30</span>
+                                <h4>地域防災訓練に参加</h4>
+                                <p>グループ全体で地域の防災訓練に参加し、有事の際の連携を確認しました。</p>
+                            </div>
+                        </article>
+                        <article class="activity-card">
+                            <div class="activity-image">
+                                <img src="images/activity_soba_field.png" alt="休耕地活用">
+                            </div>
+                            <div class="activity-body">
+                                <span class="activity-date">2024.09.20</span>
+                                <h4>休耕地活用プロジェクト</h4>
+                                <p>知多美人そばの栽培を通じて、休耕地の有効活用を推進しています。</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tab-panel" id="culture">
+                    <div class="activity-grid">
+                        <article class="activity-card">
+                            <div class="activity-image">
+                                <img src="images/activity_cooking.png" alt="料理教室">
+                            </div>
+                            <div class="activity-body">
+                                <span class="activity-date">2024.12.01</span>
+                                <h4>シェフによる料理教室</h4>
+                                <p>HANROKシェフ鈴木による地元食材を使った料理教室を開催しました。</p>
+                            </div>
+                        </article>
+                        <article class="activity-card">
+                            <div class="activity-image">
+                                <img src="images/activity_harvest.png" alt="収穫祭">
+                            </div>
+                            <div class="activity-body">
+                                <span class="activity-date">2024.08.15</span>
+                                <h4>知多美人そば収穫祭</h4>
+                                <p>そばの花畑を開放し、収穫体験イベントを開催しました。</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="activities.html" class="btn btn-outline">すべての活動を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SDGsセクション -->
+    <section class="sustainability" id="sustainability">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <div class="section-leaf-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+                    </svg>
+                </div>
+                <h2 class="section-title-large">Sustainability</h2>
+                <span class="section-subtitle-large">SDGsへの取り組み</span>
+            </div>
+            <div class="sdgs-intro">
+                <p>
+                    アグメントグループは、持続可能な開発目標（SDGs）の達成に向けて、
+                    事業活動を通じた様々な取り組みを推進しています。
+                </p>
+            </div>
+            <div class="sdgs-grid">
+                <div class="sdgs-item">
+                    <div class="sdgs-icon sdgs-6">6</div>
+                    <h4>安全な水とトイレを世界中に</h4>
+                    <p>浄化槽メンテナンスと水質管理で地域の水環境を守ります</p>
+                </div>
+                <div class="sdgs-item">
+                    <div class="sdgs-icon sdgs-8">8</div>
+                    <h4>働きがいも経済成長も</h4>
+                    <p>社員の成長を支援し、地域雇用の創出に貢献します</p>
+                </div>
+                <div class="sdgs-item">
+                    <div class="sdgs-icon sdgs-11">11</div>
+                    <h4>住み続けられるまちづくりを</h4>
+                    <p>環境インフラの整備で持続可能な地域社会を支えます</p>
+                </div>
+                <div class="sdgs-item">
+                    <div class="sdgs-icon sdgs-12">12</div>
+                    <h4>つくる責任つかう責任</h4>
+                    <p>食品リサイクルと資源循環で持続可能な消費を促進します</p>
+                </div>
+                <div class="sdgs-item">
+                    <div class="sdgs-icon sdgs-13">13</div>
+                    <h4>気候変動に具体的な対策を</h4>
+                    <p>バイオマス燃料の製造・販売でCO2削減に貢献します</p>
+                </div>
+                <div class="sdgs-item">
+                    <div class="sdgs-icon sdgs-15">15</div>
+                    <h4>陸の豊かさも守ろう</h4>
+                    <p>休耕地活用と有機農業で地域の生態系を保全します</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ニュースセクション -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <div class="section-leaf-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+                    </svg>
+                </div>
+                <h2 class="section-title-large">News</h2>
+                <span class="section-subtitle-large">最新ニュース</span>
+            </div>
+            <div class="news-list" id="newsList">
+                <article class="news-item">
+                    <time class="news-date">2024.12.15</time>
+                    <span class="news-category news-category-info">お知らせ</span>
+                    <a href="#" class="news-title">年末年始の営業についてのご案内</a>
+                </article>
+                <article class="news-item">
+                    <time class="news-date">2024.12.01</time>
+                    <span class="news-category news-category-event">イベント</span>
+                    <a href="#" class="news-title">HANROKクリスマスディナーのご予約受付開始</a>
+                </article>
+                <article class="news-item">
+                    <time class="news-date">2024.11.20</time>
+                    <span class="news-category news-category-recruit">採用</span>
+                    <a href="recruit.html" class="news-title">2025年度新卒採用エントリー受付中</a>
+                </article>
+                <article class="news-item">
+                    <time class="news-date">2024.11.10</time>
+                    <span class="news-category news-category-info">お知らせ</span>
+                    <a href="#" class="news-title">環境省「エコ・ファースト企業」に認定されました</a>
+                </article>
+                <article class="news-item">
+                    <time class="news-date">2024.10.25</time>
+                    <span class="news-category news-category-media">メディア</span>
+                    <a href="#" class="news-title">中日新聞に知多美人そばプロジェクトが掲載されました</a>
+                </article>
+            </div>
+            <div class="section-footer">
+                <a href="news.html" class="btn btn-outline">すべてのニュースを見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 採用セクション -->
+    <section class="recruit-cta">
+        <div class="recruit-bg">
+            <div class="recruit-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="recruit-content">
+                <div class="section-title-wrapper" style="justify-content: center; color: white; display: inline-flex;">
+                    <div class="section-leaf-icon" style="color: white;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22l1-2.3A4.49,4.49,0,0,0,8,20C19,20,22,3,22,3,21,5,14,5.25,9,6.25S2,11.5,2,13.5a6.22,6.22,0,0,0,1.75,3.75C7,8,17,8,17,8Z" />
+                        </svg>
+                    </div>
+                    <h2 class="section-title-large" style="color: white;">Recruit</h2>
+                    <span class="section-subtitle-large" style="color: white;">採用情報</span>
+                </div>
+                <h3 class="recruit-title" style="margin-top:2rem;">
+                    共に、<br>
+                    未来を創る仲間へ
+                </h3>
+                <p class="recruit-description">
+                    アグメントグループでは、環境・飲食の各分野で<br>
+                    共に働く仲間を募集しています。<br>
+                    地域に貢献し、持続可能な社会を創る。<br>
+                    そんな志を持つあなたを待っています。
+                </p>
+                <a href="recruit.html" class="btn btn-primary btn-large">採用情報を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-main">AGUMENT</span>
+                        <span class="logo-sub">GROUP</span>
+                    </a>
+                    <p class="footer-tagline">人と環境を美しく。知多半島から、未来へ。</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4>グループについて</h4>
+                        <ul>
+                            <li><a href="#philosophy">理念</a></li>
+                            <li><a href="#message">社長挨拶</a></li>
+                            <li><a href="#group">グループ企業</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>事業内容</h4>
+                        <ul>
+                            <li><a href="agument.html">環境事業</a></li>
+                            <li><a href="https://hanrok.jp/" target="_blank">飲食事業（HANROK）</a></li>
+                            <li><a href="#activities">活動報告</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>情報</h4>
+                        <ul>
+                            <li><a href="#news">ニュース</a></li>
+                            <li><a href="#sustainability">SDGs</a></li>
+                            <li><a href="recruit.html">採用情報</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>お問い合わせ</h4>
+                        <ul>
+                            <li><a href="contact.html">お問い合わせ</a></li>
+                            <li><a href="tel:0120-48-3594">0120-48-3594</a></li>
+                            <li><a href="mailto:info@agument.co.jp">info@agument.co.jp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-group-companies">
+                    <span>グループ企業：</span>
+                    <a href="agument.html">株式会社アグメント</a>
+                    <span>|</span>
+                    <a href="https://hanrok.jp/" target="_blank">株式会社chita（HANROK）</a>
+                </div>
+                <p class="copyright">&copy; 2024 AGUMENT GROUP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクリプト -->
+    <script src="main.js"></script>
+</body>
+
+</html>

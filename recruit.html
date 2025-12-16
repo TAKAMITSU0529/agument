@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="アグメントグループの採用情報。環境事業・飲食事業で活躍する仲間を募集しています。人にフォーカスした職場環境で、地域に貢献する仕事を一緒にしませんか。">
+    <meta name="keywords" content="アグメント, 採用, 求人, 環境事業, 飲食事業, HANROK, 知多半島">
+    <title>採用情報 | アグメントグループ - AGUMENT GROUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="recruit.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header header-dark" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-main">AGUMENT</span>
+                <span class="logo-sub">GROUP</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#philosophy">理念</a></li>
+                    <li><a href="index.html#message">社長挨拶</a></li>
+                    <li><a href="index.html#group">グループ</a></li>
+                    <li><a href="index.html#activities">活動</a></li>
+                    <li><a href="index.html#sustainability">SDGs</a></li>
+                    <li><a href="index.html#news">ニュース</a></li>
+                    <li><a href="recruit.html" class="nav-recruit">採用情報</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html#philosophy">理念</a></li>
+                <li><a href="index.html#message">社長挨拶</a></li>
+                <li><a href="index.html#group">グループ</a></li>
+                <li><a href="index.html#activities">活動</a></li>
+                <li><a href="index.html#sustainability">SDGs</a></li>
+                <li><a href="index.html#news">ニュース</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 採用ヒーロー (Premium Design) -->
+    <section class="recruit-hero-premium" id="hero">
+        <div class="hero-bg">
+            <img src="images/activity_soba_field_cleaned.png" alt="Recruit Hero" class="hero-bg-image">
+            <div class="hero-gradient"></div>
+
+            <!-- Wave Animation -->
+            <div class="hero-wave-line">
+                <svg class="wave-svg" viewBox="0 0 1440 600" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="waveGradientRecruit" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#c4a35a; stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#dfce9d; stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1a5f4e; stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glowRecruit" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="5" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    <path class="wave-path" d="M-100,400 C300,500 500,100 900,300 C1300,500 1500,200 1600,300"
+                        fill="none" stroke="url(#waveGradientRecruit)" stroke-width="8" stroke-linecap="round"
+                        filter="url(#glowRecruit)" />
+                </svg>
+            </div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-label-gold">JOIN US</span>
+            <h1 class="hero-title-large">RECRUIT</h1>
+            <p class="hero-subtitle-ja">
+                共に創る、持続可能な未来
+            </p>
+            <p class="hero-description-text">
+                アグメントグループは、環境事業と飲食事業を通じて<br>
+                知多半島の未来を支える仲間を募集しています。
+            </p>
+        </div>
+        <div class="hero-scroll">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 会社の魅力 -->
+    <section class="recruit-appeal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Appeal</span>
+                <h2 class="section-title">アグメントグループの魅力</h2>
+            </div>
+            <div class="appeal-grid">
+                <div class="appeal-card">
+                    <div class="appeal-number">01</div>
+                    <h3>地域に根ざした安定基盤</h3>
+                    <p>
+                        知多半島で60年以上の歴史を持つ環境事業と、
+                        地元食材にこだわる高級レストラン。
+                        地域インフラを支える安定した事業基盤があります。
+                    </p>
+                </div>
+                <div class="appeal-card">
+                    <div class="appeal-number">02</div>
+                    <h3>多様なキャリアパス</h3>
+                    <p>
+                        環境・飲食・管理部門など、
+                        多彩な職種であなたの可能性を広げます。
+                        グループ内での異動や新規事業への挑戦も可能です。
+                    </p>
+                </div>
+                <div class="appeal-card">
+                    <div class="appeal-number">03</div>
+                    <h3>人を大切にする風土</h3>
+                    <p>
+                        働く人を第一に考える企業風土。
+                        ワークライフバランスを重視し、
+                        社員一人ひとりの成長をサポートします。
+                    </p>
+                </div>
+                <div class="appeal-card">
+                    <div class="appeal-number">04</div>
+                    <h3>SDGsへの本気の取り組み</h3>
+                    <p>
+                        食品リサイクル、資源循環、地域貢献。
+                        社会課題の解決に真剣に取り組む企業で、
+                        やりがいを持って働けます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 部署紹介 -->
+    <section class="departments" id="departments">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Departments</span>
+                <h2 class="section-title">部署紹介</h2>
+            </div>
+            <p class="section-description">
+                各部署で活躍する社員の声と共に、仕事の内容をご紹介します。
+            </p>
+
+            <!-- 部署1: メンテナンス事業部 -->
+            <div class="department-section" id="dept-maintenance">
+                <div class="department-header">
+                    <div class="department-info">
+                        <span class="department-company">株式会社アグメント</span>
+                        <h3 class="department-name">メンテナンス事業部</h3>
+                        <p class="department-description">
+                            浄化槽や給水設備の維持管理、下水道の調査・補修を担当。
+                            地域のライフラインを守る、社会インフラの要となる部門です。
+                        </p>
+                    </div>
+                </div>
+                <div class="department-content">
+                    <div class="employee-card">
+                        <div class="visual-wrapper">
+                            <img src="images/agument_building.png" alt="Office Background" class="visual-bg-img">
+                            <img src="images/employee_maintenance.png" alt="田中 健太" class="visual-person-img">
+                        </div>
+                        <div class="recruit-info-overlay">
+                            <h4>先輩社員の声</h4>
+                            <p class="employee-name">田中 健太（入社5年目）</p>
+                            <p class="employee-quote">
+                                「目に見えないところで地域の生活を支えている実感があります。
+                                技術を磨きながら、チームで課題を解決していく面白さがあります。
+                                資格取得支援も充実していて、着実にスキルアップできる環境です。」
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <h4>募集要項</h4>
+                        <table class="requirements-table">
+                            <tr>
+                                <th>職種</th>
+                                <td>設備メンテナンススタッフ</td>
+                            </tr>
+                            <tr>
+                                <th>業務内容</th>
+                                <td>浄化槽・給水設備の点検・維持管理、下水道調査・補修工事</td>
+                            </tr>
+                            <tr>
+                                <th>応募資格</th>
+                                <td>普通自動車免許（AT限定可）、未経験者歓迎</td>
+                            </tr>
+                            <tr>
+                                <th>勤務地</th>
+                                <td>愛知県知多郡阿久比町</td>
+                            </tr>
+                            <tr>
+                                <th>給与</th>
+                                <td>月給22万円〜35万円（経験・能力による）</td>
+                            </tr>
+                            <tr>
+                                <th>待遇</th>
+                                <td>社会保険完備、資格取得支援、賞与年2回、交通費支給</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 部署2: 環境事業部 -->
+            <div class="department-section" id="dept-environment">
+                <div class="department-header">
+                    <div class="department-info">
+                        <span class="department-company">株式会社アグメント</span>
+                        <h3 class="department-name">環境事業部</h3>
+                        <p class="department-description">
+                            一般・産業廃棄物の収集運搬処理、食品リサイクル「アグエコ」を担当。
+                            持続可能な社会の実現に向けて、資源循環を推進します。
+                        </p>
+                    </div>
+                </div>
+                <div class="department-content">
+                    <div class="employee-card">
+                        <div class="visual-wrapper">
+                            <img src="images/recycling_facility.png" alt="Facility Background" class="visual-bg-img">
+                            <img src="images/employee_environment.png" alt="鈴木 美咲" class="visual-person-img">
+                        </div>
+                        <div class="recruit-info-overlay">
+                            <h4>先輩社員の声</h4>
+                            <p class="employee-name">鈴木 美咲（入社3年目）</p>
+                            <p class="employee-quote">
+                                「廃棄物を資源に変える仕事にやりがいを感じています。
+                                私たちが作った堆肥で知多美人そばが育ち、
+                                それがレストランで提供される。この循環を実感できるのが魅力です。」
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <h4>募集要項</h4>
+                        <table class="requirements-table">
+                            <tr>
+                                <th>職種</th>
+                                <td>リサイクルスタッフ / ドライバー</td>
+                            </tr>
+                            <tr>
+                                <th>業務内容</th>
+                                <td>廃棄物の収集運搬、リサイクル処理、堆肥製造</td>
+                            </tr>
+                            <tr>
+                                <th>応募資格</th>
+                                <td>普通自動車免許、中型免許あれば尚可</td>
+                            </tr>
+                            <tr>
+                                <th>勤務地</th>
+                                <td>愛知県知多郡阿久比町</td>
+                            </tr>
+                            <tr>
+                                <th>給与</th>
+                                <td>月給20万円〜32万円（経験・能力による）</td>
+                            </tr>
+                            <tr>
+                                <th>待遇</th>
+                                <td>社会保険完備、各種手当、賞与年2回、交通費支給</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 部署3: 資源循環推進事業部 -->
+            <div class="department-section" id="dept-resource">
+                <div class="department-header">
+                    <div class="department-info">
+                        <span class="department-company">株式会社アグメント</span>
+                        <h3 class="department-name">資源循環推進事業部</h3>
+                        <p class="department-description">
+                            ペレット燃料の製造・販売、堆肥製造・販売を担当。
+                            バイオマス資源の活用で、カーボンニュートラルな社会を目指します。
+                        </p>
+                    </div>
+                </div>
+                <div class="department-content">
+                    <div class="employee-card">
+                        <div class="visual-wrapper">
+                            <img src="images/activity_soba_field.png" alt="Soba Field" class="visual-bg-img">
+                            <img src="images/employee_resource.png" alt="山田 大輔" class="visual-person-img">
+                        </div>
+                        <div class="recruit-info-overlay">
+                            <h4>先輩社員の声</h4>
+                            <p class="employee-name">山田 大輔（入社7年目）</p>
+                            <p class="employee-quote">
+                                「木質バイオマスや食品残渣を燃料や堆肥に再生する仕事です。
+                                環境問題の解決に直接貢献できていることを実感しています。
+                                新しい技術にも積極的に挑戦できる職場環境です。」
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <h4>募集要項</h4>
+                        <table class="requirements-table">
+                            <tr>
+                                <th>職種</th>
+                                <td>製造スタッフ / 品質管理</td>
+                            </tr>
+                            <tr>
+                                <th>業務内容</th>
+                                <td>ペレット燃料・堆肥の製造、品質管理、出荷業務</td>
+                            </tr>
+                            <tr>
+                                <th>応募資格</th>
+                                <td>高卒以上、未経験者歓迎</td>
+                            </tr>
+                            <tr>
+                                <th>勤務地</th>
+                                <td>愛知県知多郡阿久比町</td>
+                            </tr>
+                            <tr>
+                                <th>給与</th>
+                                <td>月給20万円〜30万円（経験・能力による）</td>
+                            </tr>
+                            <tr>
+                                <th>待遇</th>
+                                <td>社会保険完備、各種手当、賞与年2回、交通費支給</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 部署4: キッチン（HANROK） -->
+            <div class="department-section" id="dept-kitchen">
+                <div class="department-header">
+                    <div class="department-info">
+                        <span class="department-company">株式会社chita（HANROK）</span>
+                        <h3 class="department-name">キッチン部門</h3>
+                        <p class="department-description">
+                            知多半島の食材を活かした創作フレンチを提供。
+                            シェフ鈴木孝典の下、本格的なフレンチ技術を学べます。
+                        </p>
+                    </div>
+                </div>
+                <div class="department-content">
+                    <div class="employee-card">
+                        <div class="visual-wrapper">
+                            <img src="images/hanrok_restaurant.png" alt="Restaurant Background" class="visual-bg-img">
+                            <img src="images/employee_kitchen.png" alt="佐藤 優子" class="visual-person-img">
+                        </div>
+                        <div class="recruit-info-overlay">
+                            <h4>先輩社員の声</h4>
+                            <p class="employee-name">佐藤 優子（入社2年目）</p>
+                            <p class="employee-quote">
+                                「フランスで修行を積んだシェフの下で働けることに感謝しています。
+                                地元の生産者さんとの繋がりも深く、
+                                食材への理解を深めながら料理の腕を磨けます。」
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <h4>募集要項</h4>
+                        <table class="requirements-table">
+                            <tr>
+                                <th>職種</th>
+                                <td>調理スタッフ</td>
+                            </tr>
+                            <tr>
+                                <th>業務内容</th>
+                                <td>フレンチレストランでの調理補助、食材管理</td>
+                            </tr>
+                            <tr>
+                                <th>応募資格</th>
+                                <td>調理師免許または調理経験者、意欲のある方</td>
+                            </tr>
+                            <tr>
+                                <th>勤務地</th>
+                                <td>愛知県半田市（HANROK）</td>
+                            </tr>
+                            <tr>
+                                <th>給与</th>
+                                <td>月給22万円〜40万円（経験・能力による）</td>
+                            </tr>
+                            <tr>
+                                <th>待遇</th>
+                                <td>社会保険完備、まかない付き、賞与年2回、研修制度</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 部署5: ホール・サービス（HANROK） -->
+            <div class="department-section" id="dept-service">
+                <div class="department-header">
+                    <div class="department-info">
+                        <span class="department-company">株式会社chita（HANROK）</span>
+                        <h3 class="department-name">ホール・サービス部門</h3>
+                        <p class="department-description">
+                            歴史ある空間で最高のおもてなしを提供。
+                            ソムリエ資格取得支援など、プロフェッショナルを目指せます。
+                        </p>
+                    </div>
+                </div>
+                <div class="department-content">
+                    <div class="employee-card">
+                        <div class="visual-wrapper">
+                            <img src="images/hanrok_restaurant.png" alt="Restaurant Background" class="visual-bg-img">
+                            <img src="images/employee_service.png" alt="伊藤 翔太" class="visual-person-img">
+                        </div>
+                        <div class="recruit-info-overlay">
+                            <h4>先輩社員の声</h4>
+                            <p class="employee-name">伊藤 翔太（入社4年目）</p>
+                            <p class="employee-quote">
+                                「明治時代の建築という特別な空間でお客様をおもてなしできる。
+                                ワインや料理の知識も深められ、
+                                一流のサービスパーソンを目指せる環境です。」
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <h4>募集要項</h4>
+                        <table class="requirements-table">
+                            <tr>
+                                <th>職種</th>
+                                <td>ホールスタッフ / ソムリエ</td>
+                            </tr>
+                            <tr>
+                                <th>業務内容</th>
+                                <td>接客サービス、ワインサービス、予約管理</td>
+                            </tr>
+                            <tr>
+                                <th>応募資格</th>
+                                <td>サービス経験者優遇、未経験者も歓迎</td>
+                            </tr>
+                            <tr>
+                                <th>勤務地</th>
+                                <td>愛知県半田市（HANROK）</td>
+                            </tr>
+                            <tr>
+                                <th>給与</th>
+                                <td>月給20万円〜35万円（経験・能力による）</td>
+                            </tr>
+                            <tr>
+                                <th>待遇</th>
+                                <td>社会保険完備、まかない付き、資格取得支援、賞与年2回</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 部署6: 管理部門 -->
+            <div class="department-section" id="dept-admin">
+                <div class="department-header">
+                    <div class="department-info">
+                        <span class="department-company">アグメントグループ</span>
+                        <h3 class="department-name">管理部門</h3>
+                        <p class="department-description">
+                            経理・総務・人事など、グループ全体のバックオフィスを担当。
+                            事業の成長を支える重要なポジションです。
+                        </p>
+                    </div>
+                </div>
+                <div class="department-content">
+                    <div class="employee-card">
+                        <div class="visual-wrapper">
+                            <img src="images/agument_building.png" alt="Office Background" class="visual-bg-img">
+                            <img src="images/employee_office.png" alt="高橋 恵" class="visual-person-img">
+                        </div>
+                        <div class="recruit-info-overlay">
+                            <h4>先輩社員の声</h4>
+                            <p class="employee-name">高橋 恵（入社6年目）</p>
+                            <p class="employee-quote">
+                                「環境と飲食、異なる事業のバックオフィスを担当するので、
+                                幅広い経験が積めます。
+                                社員みんなが働きやすい環境づくりにやりがいを感じています。」
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-requirements">
+                        <h4>募集要項</h4>
+                        <table class="requirements-table">
+                            <tr>
+                                <th>職種</th>
+                                <td>経理 / 総務 / 人事</td>
+                            </tr>
+                            <tr>
+                                <th>業務内容</th>
+                                <td>経理業務、労務管理、採用活動、総務全般</td>
+                            </tr>
+                            <tr>
+                                <th>応募資格</th>
+                                <td>事務経験者、簿記資格保持者優遇</td>
+                            </tr>
+                            <tr>
+                                <th>勤務地</th>
+                                <td>愛知県知多郡阿久比町（本社）</td>
+                            </tr>
+                            <tr>
+                                <th>給与</th>
+                                <td>月給20万円〜30万円（経験・能力による）</td>
+                            </tr>
+                            <tr>
+                                <th>待遇</th>
+                                <td>社会保険完備、各種手当、賞与年2回、有給休暇</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 採用フロー -->
+    <section class="recruit-flow">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Flow</span>
+                <h2 class="section-title">採用フロー</h2>
+            </div>
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <h4>エントリー</h4>
+                    <p>お問い合わせフォームまたはお電話でご応募ください</p>
+                </div>
+                <div class="flow-line"></div>
+                <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <h4>書類選考</h4>
+                    <p>履歴書・職務経歴書をお送りください</p>
+                </div>
+                <div class="flow-line"></div>
+                <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <h4>面接（1〜2回）</h4>
+                    <p>担当者との面接を行います</p>
+                </div>
+                <div class="flow-line"></div>
+                <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <h4>内定・入社</h4>
+                    <p>採用決定後、入社手続きを行います</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 応募CTA -->
+    <section class="recruit-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>あなたのご応募をお待ちしています</h2>
+                <p>まずはお気軽にお問い合わせください。<br>会社見学も随時受け付けています。</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">応募・お問い合わせ</a>
+                    <a href="tel:0120-48-3594" class="btn btn-secondary-dark btn-large">
+                        <span>📞</span> 0120-48-3594
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-main">AGUMENT</span>
+                        <span class="logo-sub">GROUP</span>
+                    </a>
+                    <p class="footer-tagline">人と環境を美しく。知多半島から、未来へ。</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-group">
+                        <h4>グループについて</h4>
+                        <ul>
+                            <li><a href="index.html#philosophy">理念</a></li>
+                            <li><a href="index.html#message">社長挨拶</a></li>
+                            <li><a href="index.html#group">グループ企業</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>事業内容</h4>
+                        <ul>
+                            <li><a href="agument.html">環境事業</a></li>
+                            <li><a href="https://hanrok.jp/" target="_blank">飲食事業（HANROK）</a></li>
+                            <li><a href="index.html#activities">活動報告</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>情報</h4>
+                        <ul>
+                            <li><a href="index.html#news">ニュース</a></li>
+                            <li><a href="index.html#sustainability">SDGs</a></li>
+                            <li><a href="recruit.html">採用情報</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-group">
+                        <h4>お問い合わせ</h4>
+                        <ul>
+                            <li><a href="contact.html">お問い合わせ</a></li>
+                            <li><a href="tel:0120-48-3594">0120-48-3594</a></li>
+                            <li><a href="mailto:info@agument.co.jp">info@agument.co.jp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-group-companies">
+                    <span>グループ企業：</span>
+                    <a href="agument.html">株式会社アグメント</a>
+                    <span>|</span>
+                    <a href="https://hanrok.jp/" target="_blank">株式会社chita（HANROK）</a>
+                </div>
+                <p class="copyright">&copy; 2024 AGUMENT GROUP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

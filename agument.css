@@ -1,0 +1,406 @@
+/* ===================================
+   Agument Page Styles
+   =================================== */
+
+/* Page Hero */
+.page-hero {
+    position: relative;
+    padding: calc(var(--header-height) + var(--space-4xl)) var(--space-xl) var(--space-3xl);
+    text-align: center;
+}
+
+.page-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.page-hero-bg-green {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+}
+
+.page-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-hero-label {
+    display: inline-block;
+    font-family: var(--font-accent);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-md);
+}
+
+.page-hero-title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.page-hero-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: var(--space-md) 0;
+    background: var(--color-light);
+}
+
+.breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    font-size: 0.75rem;
+    color: var(--color-gray-500);
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '>';
+    margin-left: var(--space-sm);
+}
+
+.breadcrumb a {
+    color: var(--color-gray-600);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+/* Company Overview */
+.company-overview {
+    padding: var(--space-4xl) 0;
+    background: var(--color-white);
+}
+
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.overview-lead {
+    font-size: 1rem;
+    color: var(--color-gray-700);
+    line-height: 2;
+    margin-bottom: var(--space-2xl);
+    text-align: center;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table tr {
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.info-table th,
+.info-table td {
+    padding: var(--space-md) var(--space-sm);
+    text-align: left;
+    font-size: 0.875rem;
+}
+
+.info-table th {
+    width: 120px;
+    font-weight: 500;
+    color: var(--color-gray-600);
+    background: var(--color-light);
+}
+
+.info-table td {
+    color: var(--color-gray-800);
+}
+
+/* Business Services */
+.business-services {
+    padding: var(--space-4xl) 0;
+    background: var(--color-light);
+}
+
+.service-block {
+    margin-bottom: var(--space-4xl);
+}
+
+.service-block:last-child {
+    margin-bottom: 0;
+}
+
+.service-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.service-number {
+    font-family: var(--font-accent);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    opacity: 0.2;
+    margin-bottom: var(--space-sm);
+}
+
+.service-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-sm);
+}
+
+.service-header p {
+    font-size: 0.9rem;
+    color: var(--color-gray-600);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+.service-item {
+    background: var(--color-white);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    position: relative;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-item-featured {
+    border: 2px solid var(--color-secondary);
+    background: linear-gradient(to bottom right, var(--color-white), rgba(196, 163, 90, 0.05));
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+}
+
+.service-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-sm);
+}
+
+.service-item p {
+    font-size: 0.85rem;
+    color: var(--color-gray-600);
+    line-height: 1.8;
+}
+
+.featured-badge {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--color-white);
+    background: var(--color-secondary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-full);
+}
+
+/* Certifications */
+.certifications {
+    padding: var(--space-4xl) 0;
+    background: var(--color-white);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+}
+
+.cert-item {
+    background: var(--color-light);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+}
+
+.cert-item h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.cert-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.cert-item li {
+    font-size: 0.85rem;
+    color: var(--color-gray-700);
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.cert-item li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-size: 0.75rem;
+}
+
+/* Service Area */
+.service-area {
+    padding: var(--space-4xl) 0;
+    background: var(--color-light);
+}
+
+.area-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+    .area-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.area-map {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.map-placeholder {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-gray-200), var(--color-gray-300));
+    color: var(--color-gray-500);
+    font-size: 0.875rem;
+}
+
+.area-list {
+    padding: var(--space-xl);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+}
+
+.area-list h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.area-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+}
+
+.area-list li {
+    font-size: 0.875rem;
+    color: var(--color-gray-700);
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.area-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+.area-note {
+    font-size: 0.75rem;
+    color: var(--color-gray-500);
+}
+
+/* Page CTA */
+.page-cta {
+    padding: var(--space-3xl) 0;
+    background: var(--color-primary);
+}
+
+.cta-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .cta-box {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.cta-text h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: var(--space-sm);
+}
+
+.cta-text p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-white:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Header Dark Mode (shared) */
+.header-dark .logo .logo-main,
+.header-dark .nav-list a {
+    color: var(--color-gray-800);
+}
+
+.header-dark .hamburger span {
+    background: var(--color-gray-800);
+}
+
+.header-dark.scrolled .logo .logo-main {
+    color: var(--color-primary-dark);
+}
